@@ -22,7 +22,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
   useEffect(() => {
     if (post) setPostData(post);
-  }, [post]);
+  }, [post, dispatch]);
 
   const clear = () => {
     setCurrentId(0);
